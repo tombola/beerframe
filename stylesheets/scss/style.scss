@@ -1,6 +1,8 @@
 @import "partials/_variables";
 
 @import "vendor/bourbon/bourbon";
-@import "vendor/underscore/_underscore";
+@import "vendor/neat/neat";
+@import "vendor/underscore/underscore";
 
-@import "partials/_typography";
+@import "partials/typography";
+@import "partials/layout"; 

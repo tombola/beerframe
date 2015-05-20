@@ -1,3 +1,9 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 /*!
 Theme Name: beerframe
 Theme URI: http://underscores.me/
@@ -1091,6 +1097,69 @@ table {
   width: 100%; }
 
 /*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit; }
+
+body {
+  background: #fff;
+  /* Fallback for when there is no custom background color defined. */ }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ""; }
+
+blockquote,
+q {
+  quotes: "" ""; }
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em; }
+
+ul,
+ol {
+  margin: 0 0 1.5em 3em; }
+
+ul {
+  list-style: disc; }
+
+ol {
+  list-style: decimal; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin: 0 1.5em 1.5em; }
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */ }
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%; }
+
+/*--------------------------------------------------------------
 4.0 Forms
 --------------------------------------------------------------*/
 button,
@@ -1471,7 +1540,28 @@ object {
   display: block; }
 
 body {
-  font-family: Times; }
+  font-family: 'Merriweather', serif;
+  color: #333;
+  font-weight: 400; }
 
-h1.site-title {
-  font-size: 36px; }
+h1, h2, h3, h4, h5 {
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  color: #222; }
+
+h2 {
+  color: #444; }
+
+a {
+  text-decoration: none; }
+  a:visited {
+    color: #333; }
+
+div#page {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  div#page::after {
+    clear: both;
+    content: "";
+    display: table; }
